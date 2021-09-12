@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
 /* ======================================================
    OEFENEN MET CSS SELECTORS
 ========================================================= */
@@ -10,32 +12,86 @@ body {
 
 /* 1.1 Geef de 'img' tag in the header een ID en zet zijn breedte op 100% */
 
-
+#foto {
+    width: 100%;
+}
 
 /* 1.2 Verander de kleur van alle list items in de unordered list naar hsl(110, 29%, 52%) */
 
-
+ul {
+    color: hsl(110, 29%, 52%);
+}
 
 /* 1.3 Geef de 'span' tag in de footer een beschrijvende class name en maak de lettergrootte kleiner  */
 
+.banner-span-tekst {
+    font-size: 10px;
+}
 
-
+/* VRAAG: Maakt de volgorde uit? Als ik b.v. hover optie, voor link optie zet dan werkt de hover optie niet ?
 /* 1.4 Haal de text-decoration van navigatie-links weg, geef onbezochte links de kleur hsl(359, 79%, 56%) en verander de kleur wanneer de gebruiker er overheen hovert. */
 
 
 
+nav a:link {
+    color: hsl(359, 79%, 56%);
+    text-decoration: none;
+}
+nav a:hover {
+    color: black;
+}
+
 /* 1.5 Maak een hover- en visited stijl voor alle links in 'main'. */
+/*VRAAG Wanneer ik de link eenmaal heb geklikt, dan "cached" het en kan ik het niet altijd nabootsen. */
+main a:any-link{
+    color: green;
+}
+
+main a:visited {
+    color: red;
+}
+main a:hover {
+    color: black;
+}
 
 
 
 /* Verander de achtergrond van de SignUp button. Tip: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors  */
-
-
+/*<input type="submit" id="submit-input" value="Signup"> VOLGENS MIJ MAG DIT NIET*/
+/*#submit-input {*/
+/*    background-color: red;*/
+/*}*/
+/*[input$="Signup"] {*/
+/*    background-color: red;*/
+/*}*/
+/*input [Submit="Signup"] {*/
+/*    border-color: red;*/
+/*}*/
+/*input [ ~=Signup] {*/
+/*    background-color: red;*/
+/*}*/
+/*input [submit="Signup"] {*/
+/*    background-color: red;*/
+/*}*/
+/*[input~="submit"] {*/
+/*    background-color: red;*/
+/*}*/
+input[type="Submit"] {
+    background-color: red;
+}
 
 /* Geef het tekst-veld een blauwe rand wanneer hij in focus is */
+input[type="text"]:focus {
+    border: 5px solid blue;
+}
+/*input[type="text"]:focus {*/
+/*    border: 5px lightblue;*/
+/*}*/
+/*WAAROM WERKT DIT NIET??*/
 
+/* Target alle heading tags op de pagina en zet hun font-family op 'Noto Sans JP', sans-serif (vraag, import je in head table van htlm of hier?*/
 
+h1,h2,h3 {
+    font-family: 'Noto Sans JP', sans-serif;
 
-/* Target alle heading tags op de pagina en zet hun font-family op 'Noto Sans JP', sans-serif */
-
-
+}

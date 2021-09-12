@@ -3,3 +3,65 @@
 ========================================================= */
 
 /* Schrijf hier  jouw CSS! */
+.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+/*.two > span {*/
+/*    font-weight: bold;*/
+/*    order: 0;*/
+/*}*/
+/*.two > div {*/
+/*    font-weight: bold;*/
+/*    order: 1;*/
+/*    align-self: flex-end;*/
+/*}*/
+/*.three {*/
+/*    display: flex;*/
+
+/*}*/
+/*.three > ul {*/
+/* float: left;*/
+/*    display: inline-block;*/
+/*!*}*! <OPMERIKING!> HULP VRAGEN VOOR INZICHT OF OEFENINGEN!!*/
+.three {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    align-items: center;
+}
+.three > ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+}
+.three li {
+    padding-inline: 20px;
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.five {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+@media (max-width: 400px) {
+    .five article {
+        flex-basis: 33%
+    }
+}
